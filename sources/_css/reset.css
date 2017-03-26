@@ -129,6 +129,21 @@ section
 	display: block
 }
 
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+ul {
+    lis-style: none;
+    margin: 10px 0;
+}
+
+ul li {
+    display: block;    
+}
+
 .clear
 {
 	clear:both;

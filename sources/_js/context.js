@@ -95,6 +95,29 @@ var Revive = function() {
 		});
 	};
 
+    PRIVATE.accordion = function() {
+        var itemElement = document.querySelectorAll('.accord-header');
+        var el;
+
+        if(!itemElement) {
+            return;    
+        }
+
+        for(var i = 0; i < itemElement.length; i++) {
+            el = itemElement[i];
+
+            el.addEventListener('click', function(e) {
+                var getParent = this.parentNode;
+                
+                if(getParent.classList.value.split(' ').indexOf('show') > 0) {
+                    getParent.classList.remove('show');
+                } else {
+                    getParent.classList.add('show');
+                }
+            });   
+        }
+    };
+
 
 	/**
 	*
@@ -112,6 +135,7 @@ var Revive = function() {
 		PRIVATE.listeners();
 
         PRIVATE.setContentHeight(DOM.fullHeightContent, PRIVATE.getDocHeight());
+        PRIVATE.accordion();
 
         // var container = document.getElementById('container');
         // var tplRendered = nunjucks.render(TPL.test, { foo: 'bar' });

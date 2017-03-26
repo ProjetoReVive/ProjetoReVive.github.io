@@ -41,6 +41,7 @@ body {
 .title-bar {
     text-align: center;
     background-color: #6d24f2;
+    margin: 0 0 20px;
 }
 
 
@@ -84,6 +85,10 @@ body {
     border-top-right-radius: 10px;
 }
 
+.accord-item {
+    margin: 0 0 40px;    
+}
+
 .accord-header {
     cursor: pointer;
     background-color: #e3e3e3;
@@ -94,6 +99,7 @@ body {
 }
 
 .accord-img {
+    border: solid 1px #fff;
     width: 94px;
     height: 94px;
     border-radius: 100%;
@@ -132,73 +138,78 @@ body {
     font-size: 10px;
 }
 
-
-.profile-name {
-
+#requirementsProject{
+    margin: 20px 0 0;
 }
 
-#profile .page-content {
+.checkbox-wrap {
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-radius: 100%;
+    background-color: #63de38;
+}
+
+.checkbox-wrap input {
+    display: none;    
+}
+
+.checkbox-wrap,
+.bar-progress-wrap,
+.checkbox-item-count {
+    display: inline-block;
+}
+
+.list-checkbox {
+    margin: 0 0 20px;    
+}
+
+.list-checkbox li {
+    margin: 0 0 10px;    
+}
+
+.checkbox-item-count {
+    float: right;
+    line-height: 24px;
+}
+
+.title-checkbox {
+    font-size: 16px;    
+}
+
+.bar-progress-wrap {
+    border: solid 1px #ddd;
+    width: 245px;
+    height: 26px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-progress {
+    width: 100px;
+    height: 24px;
+    display: inline-block;
+    background: #63de38;
+}
+
+.title-background {
+    margin: 0 0 20px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #0ebc99;    
+}
+
+.wrap-button {
     text-align: center;
 }
 
-#profile .header-content {
-    background: #6d24f2;
-    color: #fff;
-    padding: 30px 0px 130px;
+.accord-text {
+    display: none;    
 }
 
-#profile .header-content h1 {
-    font-size: 30px;
-}
-
-#profile .profile-image {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    margin: 0 auto;
-    position: relative;
-    margin-top: -100px;
-}
-
-#profile .profile-image .image-container {
-    display: block;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-#profile .profile-image img {
-    display: block;
-    width: 200px;
-    height: 200px;
-}
-
-#profile .profile-image .verified {
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
-    background: #4ae5e2;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    color: #fff;
-    line-height: 50px;
-    font-size: 25px;
-}
-
-.profile-infos {
-   color: #222; 
-   padding: 50px 0px;
-}
-
-.profile-infos li {
-    margin: 10px 0px;
-}
-
-.profile-infos .fa {
-    margin-right: 5px;
+.show .accord-text {
+    display: block;    
 }
