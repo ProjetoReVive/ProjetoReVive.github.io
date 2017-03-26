@@ -77,14 +77,21 @@ body {
 #userProject {}
 
 .accord-bar {
+    border: solid 1px #ddd;
+    border-bottom: none;
     width: 100%;
     height: 6px;
     background: green;
+    border-top-right-radius: 10px;
 }
 
 .accord-header {
+    cursor: pointer;
     background-color: #e3e3e3;
-    heihgt: 94px;    
+    height: 60px;
+    border-bottom-right-radius: 10px;
+    margin: 0 0 24px;
+    border: solid 1px #ddd;
 }
 
 .accord-img {
@@ -108,11 +115,11 @@ body {
     height: 45px;
     overflow: hidden;
     padding: 5px 10px 0;
-    margin: 10px 0 0;
+    margin: 6px 0 0;
 }
 
 .accord-title-project {
-    width: 120px;
+    width: 118px;
     border-right: solid 1px #ccc;
     text-align: center;
 }
