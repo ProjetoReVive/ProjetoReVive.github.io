@@ -119,6 +119,32 @@ var Revive = function() {
     };
 
 
+    PRIVATE.checkboxStatus = function() {
+        var itemElement = document.querySelectorAll('.list-checkbox li');
+        var el;
+
+        if(!itemElement) {
+            return;    
+        }
+
+        for(var i = 0; i < itemElement.length; i++) {
+            el = itemElement[i];
+
+            el.addEventListener('change', function(e) {
+                var input = this.querySelector('input');
+                var span = input.parentNode;
+                
+                if(input.checked) {
+                    span.classList.add('active');
+                } else {
+                    span.classList.remove('active');
+                }
+            });   
+        }
+
+    };
+
+
 	/**
 	*
 	* PUBLIC FUNCTIONS
@@ -136,6 +162,7 @@ var Revive = function() {
 
         PRIVATE.setContentHeight(DOM.fullHeightContent, PRIVATE.getDocHeight());
         PRIVATE.accordion();
+        PRIVATE.checkboxStatus();
 
         // var container = document.getElementById('container');
         // var tplRendered = nunjucks.render(TPL.test, { foo: 'bar' });
