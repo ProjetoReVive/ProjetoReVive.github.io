@@ -41,7 +41,6 @@ body {
 .title-bar {
     text-align: center;
     background-color: #6d24f2;
-    margin: 0 0 20px;
 }
 
 
@@ -119,4 +118,75 @@ body {
 .accord-short-description {
     width: 100px;
     font-size: 10px;
+}
+
+
+.profile-name {
+
+}
+
+#profile .page-content {
+    text-align: center;
+}
+
+#profile .header-content {
+    background: #6d24f2;
+    color: #fff;
+    padding: 30px 0px 130px;
+}
+
+#profile .header-content h1 {
+    font-size: 30px;
+}
+
+#profile .profile-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -100px;
+}
+
+#profile .profile-image .image-container {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#profile .profile-image img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+#profile .profile-image .verified {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    background: #4ae5e2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.profile-infos {
+   color: #222; 
+   padding: 50px 0px;
+}
+
+.profile-infos li {
+    margin: 10px 0px;
+}
+
+.profile-infos .fa {
+    margin-right: 5px;
 }
