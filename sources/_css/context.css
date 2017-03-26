@@ -83,6 +83,7 @@ body {
 }
 
 .accord-header {
+    background-color: #e3e3e3;
     heihgt: 94px;    
 }
 
@@ -114,6 +115,10 @@ body {
     width: 120px;
     border-right: solid 1px #ccc;
     text-align: center;
+}
+
+.accord-title-project small {
+    text-transform: uppercase;    
 }
 
 .accord-short-description {
