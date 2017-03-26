@@ -1,6 +1,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
     font-size: 14px;
+	color: #484848;
 }
 
 
@@ -90,7 +91,7 @@ body {
 }
 
 .accord-item {
-    margin: 0 0 40px;    
+    margin: 0 0 40px;   
 }
 
 .accord-header {
